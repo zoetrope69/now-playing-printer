@@ -78,10 +78,10 @@ serialPort.on('open', _ => {
 
           printer.printImage(imagePath).lineFeed(2).print(_ => {
             console.log('Printed image');
-          });
 
-          console.log('Resumed track stream');
-          trackStream.start();
+            console.log('Resumed track stream');
+            trackStream.start();
+          });
         })
         .catch(error => {
           console.error(error);
