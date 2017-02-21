@@ -22,8 +22,6 @@ if (
   return console.error('Missing environment variabes.');
 }
 
-const fs = require('fs');
-
 const SerialPort = require('serialport');
 const serialPort = new SerialPort(PRINTER_USB, { baudrate: +PRINTER_BAUDRATE });
 const Printer = require('thermalprinter');
@@ -106,11 +104,6 @@ const getAndDitherImage = (track) => new Promise((resolve, reject) => {
 
   const imageFilename = track.imageUrl.substr(track.imageUrl.lastIndexOf('/'));
   const imagePath = `${__dirname}/images/${imageFilename}`;
-
-  if (fs.existsSync(imagePath)) {
-    console.log('File already exists');
-    return resolve(imagePath);
-  }
 
   const FONT_SIZE = 16;
   const TEXT_MAX_LENGTH = 22;
