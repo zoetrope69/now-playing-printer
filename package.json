@@ -1,0 +1,14 @@
+{
+  "name": "now-playing-printer",
+  "version": "1.0.0",
+  "description": "🎧🔥🖨️🖼️ print out the album art music you're currently listening to",
+  "main": "main.js",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "gm": "^1.23.0",
+    "lastfm": "^0.9.2",
+    "request": "^2.79.0",
+    "serialport": "^4.0.7",
+    "thermalprinter": "^0.3.8"
+  }
+}
