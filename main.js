@@ -67,6 +67,12 @@ serialPort.on('open', _ => {
 
     const trackStream = lastfm.stream(LASTFM_USERNAME);
 
+    trackStream.on('error', error => {
+      if (error.message) {
+        return console.error('Error: ', error.message);
+      }
+    });
+
     trackStream.on('nowPlaying', track => {
       console.log('Paused track stream');
       trackStream.stop();
