@@ -4,9 +4,11 @@ _🎧🔥🖨️🖼️ print out the album art music you're currently listening
 
 Uses Last.fm to get the tracks you're listening to and then prints them out on a thermal receipt printer.
 
-*I did a talk about this, here are my slides: https://docs.google.com/presentation/d/1gCsklfmLf14PuasJexWyZcEoaQp72HyZ2LuIPDJe1Ys/edit*
-
 ![Picture of a song printed out](printer.jpg)
+
+*here's a vid of it working: https://www.youtube.com/watch?v=ElmxS7iTNQ4*
+
+*I did a talk about this, here are my slides: https://docs.google.com/presentation/d/1gCsklfmLf14PuasJexWyZcEoaQp72HyZ2LuIPDJe1Ys/edit*
 
 ## what you need
 
